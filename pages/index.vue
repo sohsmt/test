@@ -21,28 +21,11 @@
           GitHub
         </a>
       </div>
-      <v-card-title class="headline">
-        {{ data }}
-      </v-card-title>
     </div>
   </div>
 </template>
 
-<script>
-import Logo from '~/components/Logo.vue'
-
-export default {
-  components: {
-    Logo,
-  },
-  async asyncData({ app }) {
-    const data = await app.$axios.$get('http://localhost:8000/')
-    return {
-      data,
-    }
-  },
-}
-</script>
+<script></script>
 
 <style>
 .container {
